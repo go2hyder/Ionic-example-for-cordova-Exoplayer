@@ -14,6 +14,11 @@ npm install -g ionic
 ```
 git clone https://github.com/go2hyder/Ionic-example-for-cordova-Exoplayer.git
 ```
+### Add exoplayer plugin
+
+```
+cordova plugin add cordova-plugin-exoplayer
+```
 
 ### Add platform
 
@@ -21,11 +26,7 @@ git clone https://github.com/go2hyder/Ionic-example-for-cordova-Exoplayer.git
 ionic platform add android
 ```
 
-### Add exoplayer plugin
 
-```
-cordova plugin add cordova-plugin-exoplayer
-```
 ### Run in device
 
 ```
