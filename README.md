@@ -32,6 +32,12 @@ cordova plugin add cordova-plugin-exoplayer
 ionic run android
 ```
 
+## More Info
+For more information see <a href="https://github.com/frontyard/cordova-plugin-exoplayer">https://github.com/frontyard/cordova-plugin-exoplayer</a>
+
+## Credits
+<a href="https://github.com/frontyard">https://github.com/frontyard</a>
+
 
 
 
