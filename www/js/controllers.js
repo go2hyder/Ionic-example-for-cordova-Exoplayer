@@ -17,7 +17,7 @@ var audioParams = {
         streamImage: 'http://url.to/channel.png',
         streamTitle: 'My channel',
         streamDescription: '2nd line you can use to display whatever you want',
-        hideProgress: true,
+        hideProgress: false,
         controlIcons: {
             'exo_rew': 'http://url.to/rew.png',
             'exo_play': 'http://url.to/play.png',
@@ -47,10 +47,10 @@ var videoParams = {
     //audioOnly: true, // Only play audio in the backgroud, default is false.
     //subtitleUrl: 'http://url.to/subtitle.srt', // Optional subtitle url
     controller: { // If this object is not present controller will not be visible
-        streamImage: 'http://url.to/channel.png',
-        streamTitle: 'My channel',
-        streamDescription: '2nd line you can use to display whatever you want',
-        hideProgress: true,
+        //streamImage: 'http://url.to/channel.png',//optional 
+        //streamTitle: 'My channel',
+        //streamDescription: '2nd line you can use to display whatever you want',
+        hideProgress: false,
         controlIcons: {
             'exo_rew': 'http://url.to/rew.png',
             'exo_play': 'http://url.to/play.png',
