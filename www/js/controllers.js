@@ -8,16 +8,16 @@ var audioParams = {
     url: 'http://s8.viastreaming.net:8965/;?type=http&nocache=16073',
     userAgent: 'MyAwesomePlayer', // default is 'ExoPlayerPlugin'
     aspectRatio: 'FILL_SCREEN', // default is FIT_SCREEN
-    hideTimeout: 5000, // Hide controls after this many milliseconds, default is 5sec
-    playOffset: 0, // Start playback 0 minutes into video specified in milliseconds, default is 0
-    //skipTime: 60 * 1000, // Amount of time to use when going forward/backward, default is 1min
+    hideTimeout: 5000, // Hide controls after this many milliseconds, default is 5 sec
+    seekTo: 0, // Start playback 10 minutes into video specified in milliseconds, default is 0
+    skipTime: 0, // Amount of time to use when going forward/backward, default is 1 min
     audioOnly: false, // Only play audio in the backgroud, default is false.
     //subtitleUrl: 'http://url.to/subtitle.srt', // Optional subtitle url
     controller: { // If this object is not present controller will not be visible
         streamImage: 'https://dummyimage.com/800x600/000/fff',
         streamTitle: 'My channel',
         streamDescription: '2nd line you can use to display whatever you want',
-        hideProgress: false,
+        hideProgress: true,
         controlIcons: {
             'exo_rew': 'http://url.to/rew.png',
             'exo_play': 'http://url.to/play.png',
@@ -86,7 +86,7 @@ var videoParams = {
 
 $scope.playVideo = function(){
  //var player = exoplayer.init(videoParams);
-    window.ExoPlayer.show(function(succ){
+    window.ExoPlayer.show(videoParams,function(succ){
       console.log(succ)}, function(err){
         console.log(err)
       });
