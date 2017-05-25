@@ -28,8 +28,8 @@ var audioParams = {
 }
 
 $scope.playAudio = function(){
-  var player = exoplayer.init(audioParams);
-    player.show(function(succ){
+  //var player = exoplayer.init(audioParams);
+    window.ExoPlayer.show(audioParams,function(succ){
       console.log(succ)}, function(err){
         console.log(err)
       });
@@ -61,8 +61,8 @@ var videoParams = {
 }
 
 $scope.playVideo = function(){
- var player = exoplayer.init(videoParams);
-    player.show(function(succ){
+ //var player = exoplayer.init(videoParams);
+    window.ExoPlayer.show(function(succ){
       console.log(succ)}, function(err){
         console.log(err)
       });
