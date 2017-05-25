@@ -5,16 +5,16 @@ angular.module('starter.controllers', [])
   /*play audio*/
 
 var audioParams = {
-    url: 'http://partlive.appscp.com:1935/live/general/playlist.m3u8',
+    url: 'http://s8.viastreaming.net:8965/;?type=http&nocache=16073',
     userAgent: 'MyAwesomePlayer', // default is 'ExoPlayerPlugin'
     aspectRatio: 'FILL_SCREEN', // default is FIT_SCREEN
     hideTimeout: 5000, // Hide controls after this many milliseconds, default is 5sec
-    //playOffset: 10 * 60 * 60 * 1000, // Start playback 10 minutes into video specified in milliseconds, default is 0
+    playOffset: 0, // Start playback 0 minutes into video specified in milliseconds, default is 0
     //skipTime: 60 * 1000, // Amount of time to use when going forward/backward, default is 1min
     audioOnly: false, // Only play audio in the backgroud, default is false.
     //subtitleUrl: 'http://url.to/subtitle.srt', // Optional subtitle url
     controller: { // If this object is not present controller will not be visible
-        streamImage: 'http://tamimahsms.com:8082/downloads/mobapps/MOI/arabic_general.png',
+        streamImage: 'https://dummyimage.com/800x600/000/fff',
         streamTitle: 'My channel',
         streamDescription: '2nd line you can use to display whatever you want',
         hideProgress: false,
@@ -38,18 +38,18 @@ $scope.playAudio = function(){
 
 /*play video*/
 var videoParams = {
-    url: 'http://38.96.148.30:1935/live/omantv1/playlist.m3u8',
+    url: 'https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8',
     userAgent: 'MyAwesomePlayer', // default is 'ExoPlayerPlugin'
     aspectRatio: 'FILL_SCREEN', // default is FIT_SCREEN
     hideTimeout: 5000, // Hide controls after this many milliseconds, default is 5sec
-    //playOffset: 10 * 60 * 60 * 1000, // Start playback 10 minutes into video specified in milliseconds, default is 0
+    playOffset: 0, // Start playback 10 minutes into video specified in milliseconds, default is 0
     //skipTime: 60 * 1000, // Amount of time to use when going forward/backward, default is 1min
     //audioOnly: true, // Only play audio in the backgroud, default is false.
     //subtitleUrl: 'http://url.to/subtitle.srt', // Optional subtitle url
     controller: { // If this object is not present controller will not be visible
-        streamImage: 'http://url.to/channel.png',
-        streamTitle: 'My channel',
-        streamDescription: '2nd line you can use to display whatever you want',
+        //streamImage: 'http://url.to/channel.png',
+        //streamTitle: 'My channel',//optional
+        //streamDescription: '2nd line you can use to display whatever you want',//optional
         hideProgress: false,
         controlIcons: {
             'exo_rew': 'http://url.to/rew.png',
